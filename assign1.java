@@ -1,7 +1,3 @@
-package com.jetbrains;
-
-//to calculate the area of a circle of given radius
-
 class Dimensions{
     double radius;
     double area() {
@@ -9,7 +5,6 @@ class Dimensions{
     }
 
     Dimensions(double radius) {
-
         this.radius = radius;
     }
 }
