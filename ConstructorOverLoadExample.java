@@ -3,6 +3,12 @@ class BoxDim{
     double depth;
     double height;
     // default
+    BoxDim(BoxDim obj){
+        width = obj.width;
+        depth = obj.depth;
+        height = obj.height;
+    }
+
     BoxDim(){
         width  = -1;
         depth  = -1;
@@ -34,6 +40,10 @@ public class ConstructorOverLoadExample {
         myBox1.volume();
         BoxDim myBox2 = new BoxDim(10.0, 20.0, 30.0);
         myBox2.volume();
+
+        // clone object
+        BoxDim myBoxClone = new BoxDim(myBox1);
+        myBoxClone.volume();
 
     }
 }
